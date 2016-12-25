@@ -8,4 +8,4 @@ RUN         apk --no-cache add --virtual .build-deps \
             apk del .build-deps
 
 EXPOSE      5555/tcp
-CMD         ["celery", "flower", "--address", "0.0.0.0", "--port", "5555"]
+CMD         ["celery", "flower", "--address=0.0.0.0", "--port=5555"]
